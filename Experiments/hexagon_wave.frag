@@ -59,7 +59,7 @@ void main() {
         finalColor = vec3(0.0, 0.0, 0.0);   
     else{
         float distance = length(st) * exp(-length(st));   
-        distance = sin(distance * 8.0 + u_time * 2.0) / 9.0;
+        distance = sin(distance * 8.0 + u_time * 2.0) / 50.0;
         distance = pow(0.01 / distance, 2.0);
         finalColor *= distance * vec3(0.9451, 0.0471, 0.0471) ; 
     }
